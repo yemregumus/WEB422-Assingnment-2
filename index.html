@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="./css/main.css" rel="stylesheet">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+
+    <script src="./js/main.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Yunus Gumus - Movie Data</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <form class="d-flex" id="searchForm">
+                    <input class="form-control me-2" type="search" placeholder="Title (case sensitive)" id="title" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="button">Search</button>
+                    &nbsp;
+                    <button class="btn btn-outline-success" type="button" id="clearForm">Clear</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <table class="table" id="moviesTable">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Title</th>
+                            <th>Plot</th>
+                            <th>Rating</th>
+                            <th>Run Time</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a id="previous-page" class="page-link" href="#" aria-label="Previous"><<</a></li>
+                <li class="page-item"><a id="current-page" class="page-link" href="#"></a></li>
+                <li class="page-item"><a id="next-page" class="page-link" href="#" aria-label="Next">>></a></li>
+            </ul>
+        </nav>
+
+        <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitle"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" data-bs-dismiss="modal" class="btn btn-secondary float-right" id="closebtn">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

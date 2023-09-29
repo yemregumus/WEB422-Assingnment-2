@@ -1,0 +1,23 @@
+table#moviesTable tbody tr {
+    cursor: pointer;
+}
+#clearForm {
+    background-color: transparent; 
+    border: 2px solid red; 
+    color: red; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+}
+
+#clearForm:hover {
+    background-color: red;
+    color: white; 
+}
+.movie:hover {
+
+    background-color: #d9d8d8; 
+}
+
+#closebtn{
+    margin-left: 704px;
+}
