@@ -1,0 +1,4 @@
+github repo : https://github.com/yemregumus/WEB422-Assingnment-2
+Live link : https://assignment2yeg.netlify.app/
+
+It takes a while for my backend to load due render.com`s slow servers... Might need to check if backend is live, this morning it was saying Server unhealthy I restarted the service then it was live again. please let me know if its not loading i can restart backend server.
